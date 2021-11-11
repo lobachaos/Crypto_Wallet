@@ -13,18 +13,19 @@
     <shared />
   </component>
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$/../Crypto_Wallet">
-      <sourceFolder url="file://$MODULE_DIR$/../Crypto_Wallet/features" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../Crypto_Wallet/spec" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../Crypto_Wallet/test" isTestSource="true" />
-      <excludeFolder url="file://$MODULE_DIR$/../Crypto_Wallet/vendor/bundle" />
-      <excludeFolder url="file://$MODULE_DIR$/../Crypto_Wallet/vendor/cache" />
-      <excludeFolder url="file://$MODULE_DIR$/../Crypto_Wallet/public/packs" />
-      <excludeFolder url="file://$MODULE_DIR$/../Crypto_Wallet/public/system" />
-      <excludeFolder url="file://$MODULE_DIR$/../Crypto_Wallet/.bundle" />
-      <excludeFolder url="file://$MODULE_DIR$/../Crypto_Wallet/log" />
-      <excludeFolder url="file://$MODULE_DIR$/../Crypto_Wallet/tmp" />
-      <excludeFolder url="file://$MODULE_DIR$/../Crypto_Wallet/components" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/features" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/public/packs" />
+      <excludeFolder url="file://$MODULE_DIR$/public/system" />
+      <excludeFolder url="file://$MODULE_DIR$/.bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/log" />
+      <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/components" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/dataSources" />
     </content>
     <orderEntry type="jdk" jdkName="RVM: ruby-3.0.0" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
