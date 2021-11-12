@@ -1,16 +1,21 @@
 <body>
 <header>
-  <h1>Seja Bem-Vindo !</h1>
+  <h1>Crypto Wallet</h1>
   <p> <b>Data : </b><%= data_formatada(Date.today) %></p>
+  <ul>
+    <li>
+      <%= link_to "Cadastro de Moedas" , coins_path %>
+    </li>
+  </ul>
 </header>
+
 <main>
-<ul>
-  <li>
-    <%= link_to "Cadastro de Moedas" , coins_path %>
-  </li>
-</ul>
+<img id="wallet" src = "<%= image_url'digital_wallet.png' %>"  alt="">
+<h2> Seja Bem-Vindo !</h2>
+
 </main>
+
 <footer>
-  <span  author> Criado por LobaChaos 2021</span>
+  <div  author> Criado por LobaChaos 2021</div>
 </footer>
 </body>
