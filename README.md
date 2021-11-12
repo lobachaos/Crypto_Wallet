@@ -1,13 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby version: 3.0.2
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
+* System dependencies:
+  * RVM https://rvm.io/
+  * Rails --> Install with  the command gem
+  * Yarn
+  * NodeJS
+  
+  
 
 * Configuration
 
