@@ -1,6 +1,6 @@
 # README
 
-* Ruby version: 3.0.2
+* Ruby version: 3.0.0
 
 * System dependencies:
   * RVM https://rvm.io/
