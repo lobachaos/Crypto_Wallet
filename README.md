@@ -8,6 +8,10 @@
   ```
   gem install rails
   ```
+  * Bundler
+   ```
+   gem install bundler
+    ```
   * NodeJS
   * Yarn
   ```
