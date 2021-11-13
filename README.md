@@ -4,10 +4,15 @@
 
 * System dependencies:
   * RVM https://rvm.io/
-  * Rails --> Install with  the command gem
-  * Yarn
+  * Rails
+  ```
+  gem install rails
+  ```
   * NodeJS
-  
+  * Yarn
+  ```
+  npm install --global yarn
+  ```
   
 
 * Configuration
