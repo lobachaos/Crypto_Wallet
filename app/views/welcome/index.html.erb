@@ -1,36 +1,35 @@
 <body>
 <header>
   <div class="field">
-  <h1>Crypto Wallet</h1>
-  <p><b>Data : </b><%= data_formatada(Date.today) %></p>
+    <h1>Crypto Wallet</h1>
+    <p><b>Data : </b><%= data_formatada(Date.today) %></p>
   </div>
-
   <nav class="menu">
-  <ul>
-    <li> <%= link_to "Cadastro de Moedas", coins_path %> </li>
-    <li>teste</li>
-    <li>Teste</li>
-    <li>Teste</li>
-    <li>Teste</li>
-  </ul>
+    <ul>
+      <li> <%= link_to "Cadastro de Moedas", coins_path %> </li>
+      <li>teste</li>
+      <li>Teste</li>
+      <li>Teste</li>
+      <li>Teste</li>
+    </ul>
   </nav>
   <aside class="autenticacao">
     <a>Login</a>
-    <a  class="botao destaque">Registrar</a>
+    <a class="botao destaque">Registrar</a>
   </aside>
 </header>
 
 <main>
   <img id="wallet" src="<%= image_url 'digital_wallet.png' %>" alt="">
   <div class="apresentacao">
-    <h2> Seja Bem-Vindo !</h2>
+    <h2> Seja Bem-Vindo !</h2>   <br>
     <p>
       Crie já sua Crypto Wallet!
     </p>
+    <br>
+    <p> Você está em ambiente de <b><%= ambiente_rails %></b></p>
+    <p>Está é uma variavel de Sessão --> <b><%= @nome %></b></p>
   </div>
 </main>
 
-<footer>
-  <p author> Criado por LobaChaos 2021 </p>
-</footer>
 </body>
