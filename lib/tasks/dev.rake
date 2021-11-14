@@ -5,7 +5,7 @@ namespace :dev do
       spinner = TTY::Spinner.new("[:spinner] Executando Task ...", format: :bouncing)
       spinner.auto_spin
        %x(rails db:drop db:create db:migrate db:seed)
-      spinner.sucess("Finalizado!")
+      spinner.success("Finalizado!")
     else
       puts "Voce nao está no Ambiente de Desenvolvimento"
     end
