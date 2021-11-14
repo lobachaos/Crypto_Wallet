@@ -34,12 +34,9 @@
    * Rails Tasks :
 
    ```
-   rails db:create
-   rails db:migrate
+   rails dev:setup
 
    ```
-
-* Database initialization
 
 * How to run the test suite
 
