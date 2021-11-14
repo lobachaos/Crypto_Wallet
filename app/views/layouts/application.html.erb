@@ -10,6 +10,23 @@
   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 
+<header>
+  <div class="start">
+    <h1>Crypto Wallet</h1>
+    <p><b>Data : </b><%= data_formatada(Date.today) %></p>
+  </div>
+
+  <nav class="menu">
+    <ul>
+      <li> <%= link_to "Cadastro de Moedas", coins_path %> </li>
+      <li>teste</li>
+      <li>Teste</li>
+      <li>Teste</li>
+      <li>Teste</li>
+    </ul>
+  </nav>
+</header>
+
 <body>
 
 <%= yield %>

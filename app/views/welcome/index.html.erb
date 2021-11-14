@@ -1,24 +1,10 @@
 <body>
-<header>
-  <div class="field">
-    <h1>Crypto Wallet</h1>
-    <p><b>Data : </b><%= data_formatada(Date.today) %></p>
-  </div>
-  <nav class="menu">
-    <ul>
-      <li> <%= link_to "Cadastro de Moedas", coins_path %> </li>
-      <li>teste</li>
-      <li>Teste</li>
-      <li>Teste</li>
-      <li>Teste</li>
-    </ul>
-  </nav>
-  <aside class="autenticacao">
-    <a>Login</a>
-    <a class="botao destaque">Registrar</a>
-  </aside>
-</header>
-
+<div class="container_autenticacao">
+<aside class="autenticacao">
+  <a>Login</a>
+  <a class="botao destaque">Registrar</a>
+</aside>
+</div>
 <main>
   <img id="wallet" src="<%= image_url 'digital_wallet.png' %>" alt="">
   <div class="apresentacao">

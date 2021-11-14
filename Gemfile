@@ -29,8 +29,11 @@ gem "jbuilder", "~> 2.7"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", ">= 1.4.4", require: false
-
+# Highlight Ruby Syntax for irb
 gem 'pry-rails'
+# A terminal spinner for tasks that have non-deterministic time frame.
+gem "tty-spinner"
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

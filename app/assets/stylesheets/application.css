@@ -14,3 +14,61 @@
  *= require_self
  */
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    grid-area: cabecalho;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #333;
+    color: #fff;
+    border-bottom: solid 5px #4faddb;
+}
+
+.start {
+    padding: 15px;
+}
+
+.menu {
+    flex-grow: 10;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu li {
+    padding: 10px 15px;
+}
+
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 125px 1fr 75px;
+    grid-gap: 1px;
+    grid-template-areas:
+                'cabecalho cabecalho'
+                'conteudo conteudo'
+                'rodape rodape'
+}
+
+footer {
+    grid-area: rodape;
+    align-items: center;
+    background: #333;
+    color: #fff;
+}
+
+[author] {
+    display: grid;
+    justify-content: center;
+    padding: 25px;
+}

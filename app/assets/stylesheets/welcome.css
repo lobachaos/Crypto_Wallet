@@ -1,33 +1,23 @@
-* {
-    padding: 0;
-    margin: 0;
+#wallet {
+    grid-area: imagem;
+    position: absolute;
+    right: 0;
+    height: 513px;
+    width: 617px;
 }
-
-header {
-    grid-area: cabecalho;
+.container_autenticacao{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #333;
-    color: #fff;
-    border-bottom: solid 5px #4faddb;
+    justify-items: center;
+    position: absolute;
+    right: 5px;
+    top: 51px;
+    color: white;
 }
-.field{
-    padding: 15px;
-}
-.menu{
-    flex-grow: 10;
-}
-.menu ul{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-.menu li {
-    padding: 10px 15px;
-}
-.autenticacao a {
-    padding: 10px 15px;
+
+.autenticacao {
+
 }
 
 main {
@@ -41,54 +31,7 @@ main {
             'texto_main imagem'
 }
 
-#wallet {
-    grid-area: imagem;
-    position: absolute;
-    right: 0;
-    height: 513px;
-    width: 617px;
-}
+
 .apresentacao{
     grid-area: texto_main;
 }
-
-footer {
-    grid-area: rodape;
-    align-items: center;
-    background: #333;
-    color: #fff;
-}
-
-[author] {
-    display: grid;
-    justify-content: center;
-    padding: 25px;
-}
-
-
-body {
-    display: grid;
-    min-height: 100vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 125px 1fr 75px;
-    grid-gap: 1px;
-    grid-template-areas:
-                'cabecalho cabecalho'
-                'conteudo conteudo'
-                'rodape rodape'
-}
-
-@media (max-width: 700px) {
-    body {
-        grid-template-columns: 1fr;
-        grid-template-rows: 80px 80px 1fr 80px;
-        grid-template-areas:
-                'cabecalho'
-                'navegacao'
-                'conteudo'
-                'rodape'
-    }
-}
-
-
-
