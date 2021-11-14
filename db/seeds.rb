@@ -7,15 +7,24 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # If exists dont create again !
+
 private
 
 def create_coin (description, acronym, url_img = "")
   Coin.find_or_create_by!({ description: "#{description}",
-                 acronym: "#{acronym}",
-                 url_img: "#{url_img}" })
+                            acronym: "#{acronym}",
+                            url_img: "#{url_img}" })
+end
+
+def create_mining_type(description, acronym = "")
+  MiningType.find_or_create_by!({ description: "#{description}",
+                                  acronym: "#{acronym}" })
 end
 
 create_coin("Bitcoin", "BTC", "https://thumbs.dreamstime.com/b/logotipo-de-bitcoin-moeda-cripto-115315174.jpg")
 create_coin("Ethereum", "ETH", "https://marcas-logos.net/wp-content/uploads/2020/03/ETHEREUM-LOGO.png")
 create_coin("Dash", "DASH", "https://cryptologos.cc/logos/dash-dash-logo.png")
 
+create_mining_type("Proof Of Work","PoW")
+create_mining_type("Proof Of Stake","PoS")
+create_mining_type("Proof Of Capacity","PoC")
