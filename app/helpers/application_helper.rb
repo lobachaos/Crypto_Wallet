@@ -10,6 +10,6 @@ module ApplicationHelper
   end
 
   def idioma
-    I18n.locale == :en ? "United States" : "Português-Brasil"
+    t('actual_locale')
   end
 end

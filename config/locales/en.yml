@@ -30,9 +30,30 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  actual_locale: United States
   links:
     show: Show
     edit: Edit
     destroy: Delete
     confirm: Are you sure?
+    back: Back
+
+  activerecord:
+    models:
+      coin: Coins
+      mining_type: Mining Types
+
+    attributes:
+      coin:
+        id: Code
+        description: Description
+        acronym: Acronym
+        url_img: Image
+        mining_type: Tipo de Mineração
+        mining_type_id: Cod - Mineração
+
+
+      mining_type:
+        id: Code
+        description: Description
+        acronym: Acronym
