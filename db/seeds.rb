@@ -10,10 +10,11 @@
 
 private
 
-def create_coin (description, acronym, url_img = "")
+def create_coin (description, acronym, url_img = "", mining_type = MiningType.all.sample)
   Coin.find_or_create_by!({ description: "#{description}",
                             acronym: "#{acronym}",
-                            url_img: "#{url_img}" })
+                            url_img: "#{url_img}" ,
+                            mining_type: mining_type })
 end
 
 def create_mining_type(description, acronym = "")
@@ -21,10 +22,11 @@ def create_mining_type(description, acronym = "")
                                   acronym: "#{acronym}" })
 end
 
-create_coin("Bitcoin", "BTC", "https://thumbs.dreamstime.com/b/logotipo-de-bitcoin-moeda-cripto-115315174.jpg")
+create_mining_type("Proof Of Work", "PoW")
+create_mining_type("Proof Of Stake", "PoS")
+create_mining_type("Proof Of Capacity", "PoC")
+
+create_coin("Bitcoin", "BTC", "https://thumbs.dreamstime.com/b/logotipo-de-bitcoin-moeda-cripto-115315174.jpg",MiningType.find_by(acronym: "PoW"))
 create_coin("Ethereum", "ETH", "https://marcas-logos.net/wp-content/uploads/2020/03/ETHEREUM-LOGO.png")
 create_coin("Dash", "DASH", "https://cryptologos.cc/logos/dash-dash-logo.png")
 
-create_mining_type("Proof Of Work","PoW")
-create_mining_type("Proof Of Stake","PoS")
-create_mining_type("Proof Of Capacity","PoC")
