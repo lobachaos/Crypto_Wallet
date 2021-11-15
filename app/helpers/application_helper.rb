@@ -1,8 +1,4 @@
 module ApplicationHelper
-  def data_formatada(data_us)
-    data_us.strftime("%d/%m/%Y")
-  end
-
   def ambiente_rails
     if Rails.env.development?
       "Desenvolvimento"
@@ -11,5 +7,9 @@ module ApplicationHelper
     else
       "Teste"
     end
+  end
+
+  def idioma
+    I18n.locale == :en ? "United States" : "Português-Brasil"
   end
 end
