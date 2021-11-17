@@ -1,6 +1,8 @@
+<main>
 <h1>Editar Moeda</h1>
-
+  <%= stylesheet_link_tag 'coins', media: 'all', 'data-turbolinks-track': 'reload' %>
 <%= render 'form', coin: @coin %>
 
 <%= link_to 'Show', @coin %> |
 <%= link_to 'Back', coins_path %>
+</main>
