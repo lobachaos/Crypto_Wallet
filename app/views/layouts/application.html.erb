@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= stylesheet_link_tag  params[:controller] , media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'jquery-3.6.0' %>
+  <%= javascript_include_tag 'notify' %>
+
 </head>
 
 <header>
@@ -38,4 +40,5 @@
 <footer>
   <p author> Criado por LobaChaos 2021 </p>
 </footer>
+
 </html>

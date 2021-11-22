@@ -82,5 +82,5 @@ test:
 production:
   <<: *default
   database: Crypto_Wallet_production
-  username: Crypto_Wallet
+  username: samara
   password: <%= ENV['CRYPTO_WALLET_DATABASE_PASSWORD'] %>
