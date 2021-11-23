@@ -31,11 +31,10 @@ gem "bootsnap", ">= 1.4.4", require: false
 gem 'pry-rails'
 # A terminal spinner for tasks that have non-deterministic time frame.
 gem "tty-spinner"
-#Internalization gem
+# Internalization gem
 gem 'rails-i18n', '~> 6.0.0'
-
-gem "notify"
-
+# Quickly design and customize responsive mobile-first sites
+gem 'bootstrap', '~> 5.1.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

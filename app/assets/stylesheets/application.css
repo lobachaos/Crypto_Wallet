@@ -12,15 +12,14 @@
  *
  *= require_tree .
  *= require_self
+
  */
 
-* {
-    padding: 0;
-    margin: 0;
-}
+@import "bootstrap";
+
+
 
 header {
-    grid-area: cabecalho;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,11 +27,9 @@ header {
     color: #fff;
     border-bottom: solid 5px #4faddb;
 }
-
-.start {
-    padding: 15px;
+.start{
+    padding: 10px;
 }
-
 .menu {
     flex-grow: 10;
 }
@@ -48,27 +45,19 @@ header {
 }
 
 
-body {
-    display: grid;
-    min-height: 100vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 125px 1fr 75px;
-    grid-gap: 1px;
-    grid-template-areas:
-                'cabecalho cabecalho'
-                'conteudo conteudo'
-                'rodape rodape'
-}
+
 
 footer {
-    grid-area: rodape;
     align-items: center;
     background: #333;
     color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 [author] {
-    display: grid;
+    display: flex;
     justify-content: center;
     padding: 25px;
 }
