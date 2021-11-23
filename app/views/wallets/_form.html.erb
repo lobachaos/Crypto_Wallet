@@ -1,0 +1,32 @@
+<%= form_with(model: wallet) do |form| %>
+  <% if wallet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(wallet.errors.count, "error") %> prohibited this wallet from being saved:</h2>
+
+      <ul>
+        <% wallet.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :descryption %>
+    <%= form.text_field :descryption %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wallet_budget %>
+    <%= form.text_field :wallet_budget %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
